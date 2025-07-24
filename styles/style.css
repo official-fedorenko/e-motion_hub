@@ -70,3 +70,63 @@ section {
   padding: 1rem 1rem;
   margin: 1rem 0;
 }
+
+footer {
+  background-color: var(--header-background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 4rem 1rem 0;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+/* ...existing code... */
+/* .news-promos {
+  background-color: var(--card-background-color);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+} */
+
+.news-promos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.news-promos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.news-promo-card {
+  background-color: var(--card-background-color);
+  border: 2px solid var(--card-border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.news-promo__date {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  /* color: var(--secondary-text-color); */
+  margin-top: 0.5rem;
+}
+/* ...existing code... */
