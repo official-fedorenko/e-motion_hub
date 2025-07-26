@@ -4,14 +4,10 @@
 @import url(./benefits.css);
 
 :root {
-  --primary-color: #1abc9c; /* основной цвет для ссылок и кнопок */
-  --primary-hover-color: #16a085; /* цвет при наведении на ссылки */
   --background-color: #181a1b; /* цвет фона страницы */
   --header-background-color: #23272a; /* цвет фона шапки */
   --text-color: #e0e0e0; /* основной цвет текста */
   --secondary-text-color: #f5f6fa; /* цвет для вторичного текста */
-  --link-color: #1abc9c; /* цвет ссылок */
-  --link-hover-color: #16a085; /* цвет ссылок при наведении */
   --button-background-color: #1abc9c; /* цвет фона кнопок */
   --button-hover-background-color: #16a085; /* цвет фона кнопок при наведении */
   --button-text-color: #ffffff; /* цвет текста кнопок */
@@ -82,9 +78,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-  body {
-    padding: 4rem 1rem 0;
-  }
   footer {
     font-size: 1.2rem;
   }

@@ -3,44 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Аккаунт</title>
+    <title>Личный кабинет | E-Motion Hub</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/account.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <header>
-      <nav>
+      <div class="logo">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="vertical-align: middle; margin-right: 10px"
+        >
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="#1abc9c"
+            stroke-width="2"
+            fill="#23272a"
+          />
+          <rect x="10" y="25" width="20" height="4" rx="2" fill="#1abc9c" />
+          <circle cx="14" cy="29" r="3" fill="#16a085" />
+          <circle cx="26" cy="29" r="3" fill="#16a085" />
+          <rect x="16" y="13" width="8" height="8" rx="2" fill="#1abc9c" />
+          <rect x="18" y="8" width="4" height="8" rx="2" fill="#16a085" />
+        </svg>
+        <span>E-Motion Hub</span>
+      </div>
+      <nav class="top-menu">
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Преимущества</a></li>
-          <li><a href="#">Модели</a></li>
-          <li><a href="#">Где купить</a></li>
+          <li><a href="#">Главная</a></li>
+          <li class="topnav__dropdown turn-off">
+            <a href="#">Обслуживание</a>
+            <ul class="topnav__dropdown-menu">
+              <li><a href="#">Модернизация</a></li>
+              <li><a href="#">Ремонт</a></li>
+              <li><a href="#">Чистка</a></li>
+            </ul>
+          </li>
+          <li class="turn-on"><a href="#">Ремонт</a></li>
+          <li class="turn-on"><a href="#">Чистка</a></li>
+          <li class="turn-on"><a href="#">Модернизация</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="account.html">Аккаунт</a></li>
+          <li><a href="./account.html">Аккаунт</a></li>
         </ul>
       </nav>
+      <button class="menu-toggle" data-top-nav-button>&#9776;</button>
     </header>
-
     <main>
       <section class="account">
         <h2>Личный кабинет</h2>
-        <div class="account-info">
-          <h3>Информация о пользователе</h3>
-          <p>Имя: Пользователь</p>
-          <p>Email: user@example.com</p>
-          <p>Адрес: Город, Улица, Дом</p>
-        </div>
-        <div class="order-history">
-          <h3>История заказов</h3>
-          <ul>
-            <li>Заказ #12345 - 01.01.2025</li>
-            <li>Заказ #67890 - 15.01.2025</li>
-          </ul>
+        <div class="account__container">
+          <aside class="account__sidebar">
+            <div class="account__avatar">
+              <img
+                src="https://i.pravatar.cc/120?img=3"
+                alt="Аватар пользователя"
+              />
+              <h3>Иван Иванов</h3>
+              <span class="account__role">Пользователь</span>
+            </div>
+            <ul class="account__menu">
+              <li class="active"><a href="#">Профиль</a></li>
+              <li><a href="#">Заказы</a></li>
+              <li><a href="#">Настройки</a></li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
+          </aside>
+          <section class="account__content">
+            <div class="account__profile">
+              <h3>Профиль</h3>
+              <div class="profile__info">
+                <div>
+                  <span class="profile__label">Имя:</span>
+                  <span>Иван Иванов</span>
+                </div>
+                <div>
+                  <span class="profile__label">E-mail:</span>
+                  <span>ivan@example.com</span>
+                </div>
+                <div>
+                  <span class="profile__label">Телефон:</span>
+                  <span>+7 900 123-45-67</span>
+                </div>
+                <div>
+                  <span class="profile__label">Город:</span>
+                  <span>Москва</span>
+                </div>
+              </div>
+              <button class="all__button">Редактировать профиль</button>
+            </div>
+            <div class="account__orders">
+              <h3>История заказов</h3>
+              <table class="orders__table">
+                <thead>
+                  <tr>
+                    <th>№</th>
+                    <th>Дата</th>
+                    <th>Товар</th>
+                    <th>Статус</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1001</td>
+                    <td>15.07.2025</td>
+                    <td>Электросамокат Xiaomi Pro 2</td>
+                    <td>
+                      <span class="order-status order-status--done"
+                        >Выполнен</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1002</td>
+                    <td>20.07.2025</td>
+                    <td>Ремонт электровелосипеда</td>
+                    <td>
+                      <span class="order-status order-status--progress"
+                        >В процессе</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1003</td>
+                    <td>22.07.2025</td>
+                    <td>Чистка моноколеса</td>
+                    <td>
+                      <span class="order-status order-status--new">Новый</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
         </div>
       </section>
     </main>
-
+    <section>
+      <h2>Личный кабинет</h2>
+      <aside>
+        <h3>Личная информация</h3>
+        <div>
+          <div>
+            <img
+              src="https://i.pravatar.cc/120?img=3"
+              alt="Аватар пользователя"
+            />
+          </div>
+          <p><strong>Имя:</strong> Иван Иванов</p>
+          <p><strong>Email:</strong> ivan@example.com</p>
+          <p><strong>Телефон:</strong> +7 900 123-45-67</p>
+          <p><strong>Город:</strong> Москва</p>
+        </div>
+      </aside>
+    </section>
     <footer>
-      <p>&copy; 2025 Электросамокаты. Все права защищены.</p>
+      <p>&copy; 2025 Электротранспорт. Все права защищены.</p>
     </footer>
   </body>
 </html>
