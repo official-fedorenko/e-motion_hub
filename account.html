@@ -6,6 +6,7 @@
     <title>Личный кабинет | E-Motion Hub</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/account.css" />
+    <script type="module" src="./scripts/main.js" defer></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
@@ -37,7 +38,7 @@
       </div>
       <nav class="top-menu">
         <ul>
-          <li><a href="#">Главная</a></li>
+          <li><a href="./index.html">Главная</a></li>
           <li class="topnav__dropdown turn-off">
             <a href="#">Обслуживание</a>
             <ul class="topnav__dropdown-menu">
@@ -56,7 +57,7 @@
       <button class="menu-toggle" data-top-nav-button>&#9776;</button>
     </header>
     <main>
-      <section class="account">
+      <!-- <section class="account">
         <h2>Личный кабинет</h2>
         <div class="account__container">
           <aside class="account__sidebar">
@@ -143,28 +144,69 @@
             </div>
           </section>
         </div>
-      </section>
+      </section> -->
     </main>
-    <section>
+    <section id="account">
       <h2>Личный кабинет</h2>
-      <aside>
-        <h3>Личная информация</h3>
-        <div>
-          <div>
+      <br />
+      <div class="account__containers">
+        <aside class="account__container">
+          <div class="account__profile-info">
+            <h3>Личная информация:</h3>
             <img
               src="https://i.pravatar.cc/120?img=3"
               alt="Аватар пользователя"
             />
+            <div class="account__details">
+              <p><strong>Имя:</strong> Иван Иванов</p>
+              <p><strong>Ник:</strong> 1v@n1v@nov</p>
+              <p><strong>Статус:</strong> Пользователь</p>
+              <p><strong>Email:</strong> ivan@mail.com</p>
+              <p><strong>Телефон:</strong> +3 900 123-45-67</p>
+              <p><strong>Город:</strong> Киев</p>
+            </div>
           </div>
-          <p><strong>Имя:</strong> Иван Иванов</p>
-          <p><strong>Email:</strong> ivan@example.com</p>
-          <p><strong>Телефон:</strong> +7 900 123-45-67</p>
-          <p><strong>Город:</strong> Москва</p>
-        </div>
-      </aside>
+          <nav class="account__settings">
+            <ul>
+              <li><button class="all__button">Изменить пароль</button></li>
+              <li><button class="all__button">Изменить имейл</button></li>
+              <li><button class="all__button">Управление профилем</button></li>
+              <li><button class="all__button">Управление заказами</button></li>
+              <li>
+                <button class="all__button">Настройки уведомлений</button>
+              </li>
+              <li><button class="all__button">Удалить аккаунт</button></li>
+              <li><button class="all__button">Выйти</button></li>
+            </ul>
+          </nav>
+        </aside>
+        <aside class="account__orders">
+          <h3>Заказы:</h3>
+          <div class="orders__list">
+            <button class="order-card order-status--done" data-order="1001">
+              <span class="order-card__num">№1001</span>
+              <span class="order-card__name">Электросамокат Xiaomi Pro 2</span>
+              <span class="order-card__date">15.07.2025</span>
+              <span class="order-card__status">Выполнен</span>
+            </button>
+            <button class="order-card order-status--progress" data-order="1002">
+              <span class="order-card__num">№1002</span>
+              <span class="order-card__name">Ремонт электровелосипеда</span>
+              <span class="order-card__date">20.07.2025</span>
+              <span class="order-card__status">В процессе</span>
+            </button>
+            <button class="order-card order-status--new" data-order="1003">
+              <span class="order-card__num">№1003</span>
+              <span class="order-card__name">Чистка моноколеса</span>
+              <span class="order-card__date">22.07.2025</span>
+              <span class="order-card__status">Новый</span>
+            </button>
+          </div>
+        </aside>
+      </div>
     </section>
     <footer>
-      <p>&copy; 2025 Электротранспорт. Все права защищены.</p>
+      <p>&copy; E-Motion Hub . Все права защищены. 2025</p>
     </footer>
   </body>
 </html>

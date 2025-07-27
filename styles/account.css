@@ -12,3 +12,133 @@
   --order-progress: #f39c12; /* цвет статуса заказа "В процессе" */
   --order-new: #e74c3c; /* цвет статуса заказа "Новый" */
 }
+
+.account__containers {
+  display: grid;
+  grid-template-columns: 250px 2fr;
+  gap: 1rem;
+  outline: 1px solid green; /* красная рамка для отладки */
+}
+
+@media (max-width: 900px) {
+  .account__containers {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .account__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .account__container .account__profile-info {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .account__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .account__container .account__profile-info {
+    margin: 0;
+  }
+}
+
+.account__container {
+  width: 100%;
+  align-items: center;
+  outline: 1px solid #e74c3c; /* красная рамка для отладки */
+}
+.account__container .all__button {
+  margin-top: 0.3rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.account__container .account__settings {
+  max-width: 300px;
+  min-width: 250px;
+  font-size: 0.1rem;
+}
+
+.account__container .account__profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.account__container .account__profile-info img {
+  border-radius: 50%;
+  margin: 0.5rem 0rem;
+}
+
+.account__container .account__details {
+  background-color: var(--card-background-color);
+  color: var(--text-color);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.account__orders ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  outline: 1px solid blue; /* синяя рамка для отладки */
+}
+
+.orders__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.order-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-background-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  border: none;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.order-status--done {
+  border-left: 6px solid var(--order-done);
+}
+.order-status--progress {
+  border-left: 6px solid var(--order-progress);
+}
+.order-status--new {
+  border-left: 6px solid var(--order-new);
+}
+
+.order-card__num {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.order-card__name {
+  flex: 1 1 200px;
+}
+.order-card__date {
+  color: var(--secondary-text-color);
+  margin-right: 1rem;
+}
+.order-card__status {
+  font-weight: bold;
+}
