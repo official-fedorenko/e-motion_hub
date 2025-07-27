@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет | E-Motion Hub</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/account.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script type="module" src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/account.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Логотип E-Motion Hub"
+          style="vertical-align: middle; margin-right: 10px"
+        >
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="#1abc9c"
+            stroke-width="2"
+            fill="#23272a"
+          />
+          <rect x="10" y="25" width="20" height="4" rx="2" fill="#1abc9c" />
+          <circle cx="14" cy="29" r="3" fill="#16a085" />
+          <circle cx="26" cy="29" r="3" fill="#16a085" />
+          <rect x="16" y="13" width="8" height="8" rx="2" fill="#1abc9c" />
+          <rect x="18" y="8" width="4" height="8" rx="2" fill="#16a085" />
+        </svg>
+        <span>E-Motion Hub</span>
+      </div>
+      <nav class="top-menu" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="login.html">Вход</a></li>
+          <li><a href="register.html">Регистрация</a></li>
+          <li class="topnav__dropdown turn-off">
+            <a href="#">Обслуживание</a>
+            <ul class="topnav__dropdown-menu">
+              <li><a href="#">Модернизация</a></li>
+              <li><a href="#">Ремонт</a></li>
+              <li><a href="#">Чистка</a></li>
+            </ul>
+          </li>
+          <li class="turn-on"><a href="#">Ремонт</a></li>
+          <li class="turn-on"><a href="#">Чистка</a></li>
+          <li class="turn-on"><a href="#">Модернизация</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="/account">Аккаунт</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" data-top-nav-button aria-label="Открыть меню">
+        &#9776;
+      </button>
+    </header>
+    <main>
+      <section id="account">
+        <h2>Личный кабинет</h2>
+        <br />
+        <div class="account__containers">
+          <aside class="account__container">
+            <div class="account__profile-info">
+              <h3>Личная информация:</h3>
+              <img
+                src="https://i.pravatar.cc/120?img=3"
+                alt="Аватар пользователя"
+              />
+              <div class="account__details">
+                <h2>Ваш аккаунт</h2>
+                <p>Имя: <span id="user-name"></span></p>
+                <p>E-mail: <span id="user-email"></span></p>
+                <p>Телефон: <span id="user-phone"></span></p>
+                <p>Город: <span id="user-city"></span></p>
+                <p>Статус: <span id="user-role"></span></p>
+              </div>
+            </div>
+            <nav class="account__settings">
+              <ul>
+                <li><button class="all__button">Изменить пароль</button></li>
+                <li><button class="all__button">Изменить имейл</button></li>
+                <li>
+                  <button class="all__button">Управление профилем</button>
+                </li>
+                <li><button class="all__button">Удалить аккаунт</button></li>
+                <li>
+                  <button id="logout-btn" class="all__button">Выйти</button>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <aside class="account__orders">
+            <h3>Заказы:</h3>
+            <div class="orders__list">
+              <button class="order-card order-status--done" data-order="1001">
+                <span class="order-card__num">№1001</span>
+                <span class="order-card__name"
+                  >Электросамокат Xiaomi Pro 2</span
+                >
+                <span class="order-card__date">15.07.2025</span>
+              </button>
+              <button
+                class="order-card order-status--progress"
+                data-order="1002"
+              >
+                <span class="order-card__num">№1002</span>
+                <span class="order-card__name">Ремонт электровелосипеда</span>
+                <span class="order-card__date">20.07.2025</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1003">
+                <span class="order-card__num">№1003</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1004">
+                <span class="order-card__num">№1004</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1005">
+                <span class="order-card__num">№1005</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1006">
+                <span class="order-card__num">№1006</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1007">
+                <span class="order-card__num">№1007</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; E-Motion Hub . Все права защищены. 2025</p>
+    </footer>
+  </body>
+</html>

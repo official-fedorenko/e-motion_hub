@@ -1,0 +1,9 @@
+<!-- filepath: c:\webprojects\webservice\e-motion_hub\favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <circle cx="20" cy="20" r="19" stroke="#1abc9c" stroke-width="2" fill="#23272a"/>
+  <rect x="10" y="25" width="20" height="4" rx="2" fill="#1abc9c"/>
+  <circle cx="14" cy="29" r="3" fill="#16a085"/>
+  <circle cx="26" cy="29" r="3" fill="#16a085"/>
+  <rect x="16" y="13" width="8" height="8" rx="2" fill="#1abc9c"/>
+  <rect x="18" y="8" width="4" height="8" rx="2" fill="#16a085"/>
+</svg>
