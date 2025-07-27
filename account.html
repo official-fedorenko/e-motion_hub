@@ -57,154 +57,76 @@
       <button class="menu-toggle" data-top-nav-button>&#9776;</button>
     </header>
     <main>
-      <!-- <section class="account">
+      <section id="account">
         <h2>Личный кабинет</h2>
-        <div class="account__container">
-          <aside class="account__sidebar">
-            <div class="account__avatar">
+        <br />
+        <div class="account__containers">
+          <aside class="account__container">
+            <div class="account__profile-info">
+              <h3>Личная информация:</h3>
               <img
                 src="https://i.pravatar.cc/120?img=3"
                 alt="Аватар пользователя"
               />
-              <h3>Иван Иванов</h3>
-              <span class="account__role">Пользователь</span>
-            </div>
-            <ul class="account__menu">
-              <li class="active"><a href="#">Профиль</a></li>
-              <li><a href="#">Заказы</a></li>
-              <li><a href="#">Настройки</a></li>
-              <li><a href="#">Выйти</a></li>
-            </ul>
-          </aside>
-          <section class="account__content">
-            <div class="account__profile">
-              <h3>Профиль</h3>
-              <div class="profile__info">
-                <div>
-                  <span class="profile__label">Имя:</span>
-                  <span>Иван Иванов</span>
-                </div>
-                <div>
-                  <span class="profile__label">E-mail:</span>
-                  <span>ivan@example.com</span>
-                </div>
-                <div>
-                  <span class="profile__label">Телефон:</span>
-                  <span>+7 900 123-45-67</span>
-                </div>
-                <div>
-                  <span class="profile__label">Город:</span>
-                  <span>Москва</span>
-                </div>
+              <div class="account__details">
+                <p><strong>Имя:</strong> Иван Иванов</p>
+                <p><strong>Ник:</strong> 1v@n1v@nov</p>
+                <p><strong>Статус:</strong> Пользователь</p>
+                <p><strong>Email:</strong> ivan@mail.com</p>
+                <p><strong>Телефон:</strong> +3 900 123-45-67</p>
+                <p><strong>Город:</strong> Киев</p>
               </div>
-              <button class="all__button">Редактировать профиль</button>
             </div>
-            <div class="account__orders">
-              <h3>История заказов</h3>
-              <table class="orders__table">
-                <thead>
-                  <tr>
-                    <th>№</th>
-                    <th>Дата</th>
-                    <th>Товар</th>
-                    <th>Статус</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1001</td>
-                    <td>15.07.2025</td>
-                    <td>Электросамокат Xiaomi Pro 2</td>
-                    <td>
-                      <span class="order-status order-status--done"
-                        >Выполнен</span
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1002</td>
-                    <td>20.07.2025</td>
-                    <td>Ремонт электровелосипеда</td>
-                    <td>
-                      <span class="order-status order-status--progress"
-                        >В процессе</span
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1003</td>
-                    <td>22.07.2025</td>
-                    <td>Чистка моноколеса</td>
-                    <td>
-                      <span class="order-status order-status--new">Новый</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <nav class="account__settings">
+              <ul>
+                <li><button class="all__button">Изменить пароль</button></li>
+                <li><button class="all__button">Изменить имейл</button></li>
+                <li>
+                  <button class="all__button">Управление профилем</button>
+                </li>
+                <li>
+                  <button class="all__button">Управление заказами</button>
+                </li>
+                <li>
+                  <button class="all__button">Настройки уведомлений</button>
+                </li>
+                <li><button class="all__button">Удалить аккаунт</button></li>
+                <li><button class="all__button">Выйти</button></li>
+              </ul>
+            </nav>
+          </aside>
+          <aside class="account__orders">
+            <h3>Заказы:</h3>
+            <div class="orders__list">
+              <button class="order-card order-status--done" data-order="1001">
+                <span class="order-card__num">№1001</span>
+                <span class="order-card__name"
+                  >Электросамокат Xiaomi Pro 2</span
+                >
+                <span class="order-card__date">15.07.2025</span>
+                <span class="order-card__status">Выполнен</span>
+              </button>
+              <button
+                class="order-card order-status--progress"
+                data-order="1002"
+              >
+                <span class="order-card__num">№1002</span>
+                <span class="order-card__name">Ремонт электровелосипеда</span>
+                <span class="order-card__date">20.07.2025</span>
+                <span class="order-card__status">В процессе</span>
+              </button>
+              <button class="order-card order-status--new" data-order="1003">
+                <span class="order-card__num">№1003</span>
+                <span class="order-card__name">Чистка моноколеса</span>
+                <span class="order-card__date">22.07.2025</span>
+                <span class="order-card__status">Новый</span>
+              </button>
             </div>
-          </section>
+          </aside>
         </div>
-      </section> -->
+      </section>
     </main>
-    <section id="account">
-      <h2>Личный кабинет</h2>
-      <br />
-      <div class="account__containers">
-        <aside class="account__container">
-          <div class="account__profile-info">
-            <h3>Личная информация:</h3>
-            <img
-              src="https://i.pravatar.cc/120?img=3"
-              alt="Аватар пользователя"
-            />
-            <div class="account__details">
-              <p><strong>Имя:</strong> Иван Иванов</p>
-              <p><strong>Ник:</strong> 1v@n1v@nov</p>
-              <p><strong>Статус:</strong> Пользователь</p>
-              <p><strong>Email:</strong> ivan@mail.com</p>
-              <p><strong>Телефон:</strong> +3 900 123-45-67</p>
-              <p><strong>Город:</strong> Киев</p>
-            </div>
-          </div>
-          <nav class="account__settings">
-            <ul>
-              <li><button class="all__button">Изменить пароль</button></li>
-              <li><button class="all__button">Изменить имейл</button></li>
-              <li><button class="all__button">Управление профилем</button></li>
-              <li><button class="all__button">Управление заказами</button></li>
-              <li>
-                <button class="all__button">Настройки уведомлений</button>
-              </li>
-              <li><button class="all__button">Удалить аккаунт</button></li>
-              <li><button class="all__button">Выйти</button></li>
-            </ul>
-          </nav>
-        </aside>
-        <aside class="account__orders">
-          <h3>Заказы:</h3>
-          <div class="orders__list">
-            <button class="order-card order-status--done" data-order="1001">
-              <span class="order-card__num">№1001</span>
-              <span class="order-card__name">Электросамокат Xiaomi Pro 2</span>
-              <span class="order-card__date">15.07.2025</span>
-              <span class="order-card__status">Выполнен</span>
-            </button>
-            <button class="order-card order-status--progress" data-order="1002">
-              <span class="order-card__num">№1002</span>
-              <span class="order-card__name">Ремонт электровелосипеда</span>
-              <span class="order-card__date">20.07.2025</span>
-              <span class="order-card__status">В процессе</span>
-            </button>
-            <button class="order-card order-status--new" data-order="1003">
-              <span class="order-card__num">№1003</span>
-              <span class="order-card__name">Чистка моноколеса</span>
-              <span class="order-card__date">22.07.2025</span>
-              <span class="order-card__status">Новый</span>
-            </button>
-          </div>
-        </aside>
-      </div>
-    </section>
+
     <footer>
       <p>&copy; E-Motion Hub . Все права защищены. 2025</p>
     </footer>
