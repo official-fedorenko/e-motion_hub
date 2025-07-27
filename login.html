@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вход | E-Motion Hub</title>
+    <meta
+      name="description"
+      content="Электротранспорт, продажа, ремонт, обслуживание. E-Motion Hub — ваш городской транспорт будущего."
+    />
+    <meta
+      name="keywords"
+      content="электротранспорт, электросамокат, электровелосипед, ремонт, обслуживание, купить"
+    />
+    <title>Главная | E-Motion Hub</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/account.css" />
     <script type="module" src="./scripts/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
@@ -18,6 +27,7 @@
           viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-label="Логотип E-Motion Hub"
           style="vertical-align: middle; margin-right: 10px"
         >
           <circle
@@ -36,9 +46,11 @@
         </svg>
         <span>E-Motion Hub</span>
       </div>
-      <nav class="top-menu">
+      <nav class="top-menu" aria-label="Главное меню">
         <ul>
           <li><a href="index.html">Главная</a></li>
+          <li><a href="login.html">Вход</a></li>
+          <li><a href="register.html">Регистрация</a></li>
           <li class="topnav__dropdown turn-off">
             <a href="#">Обслуживание</a>
             <ul class="topnav__dropdown-menu">
@@ -54,7 +66,9 @@
           <li><a href="account.html">Аккаунт</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" data-top-nav-button>&#9776;</button>
+      <button class="menu-toggle" data-top-nav-button aria-label="Открыть меню">
+        &#9776;
+      </button>
     </header>
     <main>
       <section class="login">

@@ -19,6 +19,7 @@
           viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-label="Логотип E-Motion Hub"
           style="vertical-align: middle; margin-right: 10px"
         >
           <circle
@@ -37,9 +38,11 @@
         </svg>
         <span>E-Motion Hub</span>
       </div>
-      <nav class="top-menu">
+      <nav class="top-menu" aria-label="Главное меню">
         <ul>
-          <li><a href="./index.html">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="login.html">Вход</a></li>
+          <li><a href="register.html">Регистрация</a></li>
           <li class="topnav__dropdown turn-off">
             <a href="#">Обслуживание</a>
             <ul class="topnav__dropdown-menu">
@@ -52,10 +55,12 @@
           <li class="turn-on"><a href="#">Чистка</a></li>
           <li class="turn-on"><a href="#">Модернизация</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="./account.html">Аккаунт</a></li>
+          <li><a href="account.html">Аккаунт</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" data-top-nav-button>&#9776;</button>
+      <button class="menu-toggle" data-top-nav-button aria-label="Открыть меню">
+        &#9776;
+      </button>
     </header>
     <main>
       <section id="account">
