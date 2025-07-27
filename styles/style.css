@@ -128,3 +128,150 @@ footer {
   margin-top: 0.5rem;
 }
 /* ...existing code... */
+
+/* Стилизация секции логин */
+.login {
+  background: var(--card-background-color);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--card-border-color);
+  background: var(--header-background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.login__form .all__button {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.login__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .login__links {
+    grid-template-columns: 1fr;
+  }
+}
+/* Стилизация секции регистрации */
+.register {
+  background: var(--card-background-color);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.register h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register__form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.register__form label {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.register__form input {
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--card-border-color);
+  background: var(--header-background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.register__form input:focus {
+  border-color: var(--primary-color);
+}
+
+.register__form .all__button {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.register__links {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+}
+
+.register__links a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  margin: 0 0.3rem;
+  transition: color 0.2s;
+}
+
+.register__links a:hover {
+  color: var(--primary-hover-color);
+}
+
+section.register a.all__button {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
