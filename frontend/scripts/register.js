@@ -22,6 +22,9 @@ if (registerForm) {
     if (response.ok) {
       messageBox.textContent = "Регистрация успешна! Ваш id: " + result.id;
       messageBox.style.color = "green";
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 1000); // через 1 секунду перебросит на страницу входа
     } else {
       if (
         result.error &&
