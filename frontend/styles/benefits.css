@@ -41,14 +41,15 @@ section.benefits .benefit-card {
   transition: transform 0.5s ease;
   overflow: hidden;
   user-select: none;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--text-color);
 }
 section.benefits .benefit-card:hover {
   transform: translateY(-5px);
+}
+.benefit__title {
+  color: var(--secondary-text);
 }

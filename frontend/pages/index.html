@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Motion Hub</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script type="module" src="./scripts/main.js" defer></script>
+    <meta
+      name="description"
+      content="Электротранспорт, продажа, ремонт, обслуживание. E-Motion Hub — ваш городской транспорт будущего."
+    />
+    <meta
+      name="keywords"
+      content="электротранспорт, электросамокат, электровелосипед, ремонт, обслуживание, купить"
+    />
+    <title>Главная | E-Motion Hub</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script type="module" src="/scripts/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   </head>
   <body>
     <header>
@@ -16,6 +26,7 @@
           viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-label="Логотип E-Motion Hub"
           style="vertical-align: middle; margin-right: 10px"
         >
           <circle
@@ -34,9 +45,11 @@
         </svg>
         <span>E-Motion Hub</span>
       </div>
-      <nav class="top-menu">
+      <nav class="top-menu" aria-label="Главное меню">
         <ul>
-          <li><a href="#">Главная</a></li>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/login">Вход</a></li>
+          <li><a href="/register">Регистрация</a></li>
           <li class="topnav__dropdown turn-off">
             <a href="#">Обслуживание</a>
             <ul class="topnav__dropdown-menu">
@@ -49,10 +62,12 @@
           <li class="turn-on"><a href="#">Чистка</a></li>
           <li class="turn-on"><a href="#">Модернизация</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="./account.html">Аккаунт</a></li>
+          <li><a href="/account">Аккаунт</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" data-top-nav-button>&#9776;</button>
+      <button class="menu-toggle" data-top-nav-button aria-label="Открыть меню">
+        &#9776;
+      </button>
     </header>
     <main>
       <section class="hero">
@@ -139,24 +154,48 @@
           </div>
         </div>
       </section>
-            </section>
       <section class="news-promos">
         <h2>Новости и акции</h2>
         <div class="news-promos__grid">
           <div class="news-promo-card">
             <h3>Скидка 10% на сервис в июле!</h3>
-            <p>Только до конца месяца — обслуживание и ремонт электротранспорта со скидкой 10%. Успейте записаться!</p>
+            <p>
+              Только до конца месяца — обслуживание и ремонт электротранспорта
+              со скидкой 10%. Успейте записаться!
+            </p>
             <span class="news-promo__date">24 июля 2025</span>
           </div>
           <div class="news-promo-card">
             <h3>Поступление новых моделей электросамокатов</h3>
-            <p>В продаже появились новинки 2025 года — мощнее, легче, с увеличенным запасом хода. Приходите на тест-драйв!</p>
+            <p>
+              В продаже появились новинки 2025 года — мощнее, легче, с
+              увеличенным запасом хода. Приходите на тест-драйв!
+            </p>
             <span class="news-promo__date">20 июля 2025</span>
           </div>
           <div class="news-promo-card">
             <h3>Бесплатная диагностика</h3>
-            <p>Всем новым клиентам — бесплатная диагностика электротранспорта до 31 июля!</p>
+            <p>
+              Всем новым клиентам — бесплатная диагностика электротранспорта до
+              31 июля!
+            </p>
             <span class="news-promo__date">15 июля 2025</span>
+          </div>
+          <div class="news-promo-card">
+            <h3>Поступление новых моделей электросамокатов</h3>
+            <p>
+              В продаже появились новинки 2025 года — мощнее, легче, с
+              увеличенным запасом хода. Приходите на тест-драйв!
+            </p>
+            <span class="news-promo__date">20 июля 2025</span>
+          </div>
+          <div class="news-promo-card">
+            <h3>Скидка 10% на сервис в июле!</h3>
+            <p>
+              Только до конца месяца — обслуживание и ремонт электротранспорта
+              со скидкой 10%. Успейте записаться!
+            </p>
+            <span class="news-promo__date">24 июля 2025</span>
           </div>
         </div>
       </section>

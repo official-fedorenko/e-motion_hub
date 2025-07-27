@@ -166,3 +166,7 @@ nav.top-menu.open-top-menu > ul {
     display: flex;
   } */
 }
+
+.menu__link {
+  color: var(--secondary-text);
+}

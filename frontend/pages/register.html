@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет | E-Motion Hub</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/account.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script type="module" src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/register.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Логотип E-Motion Hub"
+          style="vertical-align: middle; margin-right: 10px"
+        >
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="#1abc9c"
+            stroke-width="2"
+            fill="#23272a"
+          />
+          <rect x="10" y="25" width="20" height="4" rx="2" fill="#1abc9c" />
+          <circle cx="14" cy="29" r="3" fill="#16a085" />
+          <circle cx="26" cy="29" r="3" fill="#16a085" />
+          <rect x="16" y="13" width="8" height="8" rx="2" fill="#1abc9c" />
+          <rect x="18" y="8" width="4" height="8" rx="2" fill="#16a085" />
+        </svg>
+        <span>E-Motion Hub</span>
+      </div>
+      <nav class="top-menu" aria-label="Главное меню">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/login">Вход</a></li>
+          <li><a href="/register">Регистрация</a></li>
+          <li class="topnav__dropdown turn-off">
+            <a href="#">Обслуживание</a>
+            <ul class="topnav__dropdown-menu">
+              <li><a href="#">Модернизация</a></li>
+              <li><a href="#">Ремонт</a></li>
+              <li><a href="#">Чистка</a></li>
+            </ul>
+          </li>
+          <li class="turn-on"><a href="#">Ремонт</a></li>
+          <li class="turn-on"><a href="#">Чистка</a></li>
+          <li class="turn-on"><a href="#">Модернизация</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="/account">Аккаунт</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" data-top-nav-button aria-label="Открыть меню">
+        &#9776;
+      </button>
+    </header>
+    <main>
+      <section class="register">
+        <h2>Регистрация</h2>
+        <form
+          class="register__form"
+          autocomplete="on"
+          aria-label="Форма регистрации"
+        >
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Введите имя"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Введите e-mail"
+              autocomplete="username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Введите номер телефона"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Придумайте пароль</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Придумайте пароль"
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password-confirm">Подтвердите пароль</label>
+            <input
+              type="password"
+              id="password-confirm"
+              name="password-confirm"
+              required
+              placeholder="Подтвердите пароль"
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="city">Город</label>
+            <input type="text" id="city" name="city" placeholder="Ваш город" />
+          </div>
+          <div class="form-group">
+            <label for="policy">
+              <input type="checkbox" id="policy" name="policy" required />
+              Я согласен с
+              <a href="#" target="_blank">политикой конфиденциальности</a>
+            </label>
+          </div>
+          <button type="submit" class="all__button">Зарегистрироваться</button>
+        </form>
+        <div id="register-message" class="form-message"></div>
+        <a href="/pages/login.html" class="all__button">Уже есть аккаунт?</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Электротранспорт. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
