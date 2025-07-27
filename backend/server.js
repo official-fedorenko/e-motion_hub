@@ -8,6 +8,7 @@ app.use(express.static("../frontend/pages"));
 app.use("/styles", express.static("../frontend/styles"));
 app.use("/assets", express.static("../frontend/assets"));
 app.use("/scripts", express.static("../frontend/scripts"));
+app.use("/components", express.static("../frontend/components"));
 app.get("/login", (req, res) => {
   res.sendFile("login.html", { root: "../frontend/pages" });
 });

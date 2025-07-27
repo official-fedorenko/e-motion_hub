@@ -3,6 +3,5 @@ export function toggleTopMenu() {
 
   topButton.addEventListener("click", () => {
     document.querySelector(".top-menu").classList.toggle("open-top-menu");
-    console.log("Top menu toggled");
   });
 }
