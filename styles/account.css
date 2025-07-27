@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: 250px 2fr;
   gap: 1rem;
-  outline: 1px solid green; /* красная рамка для отладки */
 }
 
 @media (max-width: 900px) {
@@ -50,7 +49,6 @@
 .account__container {
   width: 100%;
   align-items: center;
-  outline: 1px solid #e74c3c; /* красная рамка для отладки */
 }
 .account__container .all__button {
   margin-top: 0.3rem;
