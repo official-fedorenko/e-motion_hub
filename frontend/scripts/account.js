@@ -12,6 +12,15 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("user-role").textContent = user.role;
   }
 
+  // Показываем кнопку "Панель администратора" только для admin
+  const accountSettings = document.querySelector(".account__settings ul");
+  if (accountSettings && user.role === "admin") {
+    const adminBtn = document.createElement("li");
+    adminBtn.innerHTML =
+      '<button class="all__button" onclick="window.location.href=\'/admin\'">Панель администратора</button>';
+    accountSettings.insertBefore(adminBtn, accountSettings.firstChild);
+  }
+
   const logoutBtn = document.getElementById("logout-btn");
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {

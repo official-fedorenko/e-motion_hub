@@ -62,6 +62,10 @@
   font-size: 0.1rem;
 }
 
+.account__settings a {
+  display: inline-block;
+}
+
 .account__container .account__profile-info {
   display: flex;
   flex-direction: column;
